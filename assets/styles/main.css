@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+header {
+    background: white;
+}
+
+header nav{
+    padding: 20px 40px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+header .logo .name {
+    font-size: 20px;
+    color: #16171d;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+header .banner {
+    display: flex;
+    align-items: flex-end;
+}
+
+header .banner small {
+    color: #00d770;
+    font-size: 1.5vw;
+}
+
+header .banner h2 {
+
+    color: #16171d;
+    margin: 0;
+    font-size: 5vw;
+    line-height: 1em;
+}
+
+header .banner .button {
+    background: #00d770;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    display: table;
+    text-decoration: none;
+    margin-top: 5vh;
+    transition: 0.5s opacity;
+    backface-visibility: hidden;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+header .banner .button:hover {
+    opacity: 0.8;
+}
+
+header .banner .left {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 80vh;
+    padding-left: 40px;
+}
+
+header .banner .left .info {
+    display: flex;
+    flex-direction: column;
+}
+
+header .banner .right {
+    display: flex;
+    align-items: baseline;
+    background: url("../images/screenshot.png") no-repeat;
+    background-size: 150%;
+    height: 80vh;
+    flex: 1;
+}
+
+header .banner .right img {
+    display: block;
+    width: 100%;
+}
+
+
+main {
+    background: #16171d;
+    min-height: 300px;
+    color: white;
+    padding: 40px;
+    font-weight: lighter;
+}
+
+main h2{
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    margin-bottom: 80px;
+}
+
+main p{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+main .list{
+    list-style: none;
+    display: flex;
+}
+
+main .list .item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+}
+
+main .list .item img{
+    -webkit-filter: invert(80%);
+    max-width: 130px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+
+    header nav{
+        padding: 10px 20px;
+    }
+
+    header .banner{
+        flex-direction: column;
+    }
+
+    header .banner .button {
+        display: none;
+    }
+
+    header .banner .left {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    header .banner .left .info h1 {
+        font-size: 40px;
+    }
+
+    header .banner .right {
+        width: 100%;
+        height: 240px;
+    }
+
+    header .banner .right{
+        background-size: 100% auto;
+    }
+}
