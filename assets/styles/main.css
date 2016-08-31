@@ -11,7 +11,7 @@ body {
     line-height: 1;
 }
 
-h2{
+h2 {
     margin: 0;
     padding: 0;
 }
@@ -21,11 +21,32 @@ header {
 }
 
 header nav {
+    display: flex;
     padding: 20px 40px;
+    align-items: center;
 }
 
+header nav .links{
+
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+header nav .links .link{
+    color: #16171d;
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: color 0.5s;
+}
+header nav .links .link:hover{
+    color: #00d770;
+}
 header .logo {
     display: flex;
+    flex: 1;
     align-items: center;
     font-weight: bold;
     color: #16171d;
@@ -77,6 +98,14 @@ header .banner .button:hover {
     opacity: 0.8;
 }
 
+header .banner .details{
+    color: #ccc;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    padding-top: 10px;
+    margin: 0;
+}
+
 header .banner .left {
     display: flex;
     align-items: center;
@@ -104,7 +133,6 @@ header .banner .right img {
     width: 100%;
 }
 
-
 section {
     padding: 40px 0px;
 }
@@ -115,11 +143,11 @@ main {
 }
 
 main h2 {
+    display: block;
     font-weight: normal;
     font-size: 40px;
     text-align: center;
-    display: block;
-    margin: 0 0 60px 0 ;
+    margin-bottom: 60px;
     color: white;
 }
 
@@ -139,7 +167,7 @@ main .list .item {
     flex-direction: column;
     width: 25%;
     text-align: center;
-    color: #abb2bf;
+    color: #696f7a;
     padding: 0 20px;
     font-weight: 600;
     line-height: 1.3em;
@@ -161,11 +189,15 @@ section.features {
     padding: 100px 0px;
 }
 
-section.available{
+section.features h2{
+    color: #9da5b4;
+}
+
+section.available {
     padding: 40px;
 }
 
-section.available h2{
+section.available h2 {
     margin: 0;
     color: #ccc;
     font-size: 30px;
@@ -220,8 +252,7 @@ footer .ion-heart {
     header .banner .right {
         background-size: 100% auto;
     }
-
-    section.features{
+    section.features {
         padding: 40px 0;
     }
     section.features .list {
@@ -231,7 +262,7 @@ footer .ion-heart {
         width: 50%;
         margin-bottom: 80px;
     }
-    section.features .list .item .icon{
+    section.features .list .item .icon {
         font-size: 80px;
     }
 }
