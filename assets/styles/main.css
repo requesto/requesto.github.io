@@ -1,18 +1,26 @@
 * {
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
     padding: 0;
     margin: 0;
     font-family: 'Helvetica', sans-serif;
+    color: #16171d;
+    line-height: 1;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background: white;
 }
 
-header nav{
+header nav {
     padding: 20px 40px;
 }
 
@@ -20,6 +28,7 @@ header .logo {
     display: flex;
     align-items: center;
     font-weight: bold;
+    color: #16171d;
 }
 
 header .logo img {
@@ -28,8 +37,7 @@ header .logo img {
 }
 
 header .logo .name {
-    font-size: 20px;
-    color: #16171d;
+    font-size: 25px;
     font-weight: bold;
     margin-left: 10px;
 }
@@ -45,7 +53,6 @@ header .banner small {
 }
 
 header .banner h2 {
-
     color: #16171d;
     margin: 0;
     font-size: 5vw;
@@ -54,7 +61,7 @@ header .banner h2 {
 
 header .banner .button {
     background: #00d770;
-    color:white;
+    color: white;
     padding: 10px 20px;
     border-radius: 3px;
     display: table;
@@ -98,77 +105,133 @@ header .banner .right img {
 }
 
 
+section {
+    padding: 40px 0px;
+}
+
 main {
-    background: #16171d;
     min-height: 300px;
-    color: white;
-    padding: 40px;
     font-weight: lighter;
 }
 
-main h2{
+main h2 {
     font-weight: normal;
     font-size: 40px;
     text-align: center;
     display: block;
-    margin-bottom: 80px;
+    margin: 0 0 60px 0 ;
+    color: white;
 }
 
-main p{
+main p {
     color: rgba(255, 255, 255, 0.5);
 }
 
-
-main .list{
+main .list {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-main .list .item{
+main .list .item {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    width: 25%;
     text-align: center;
+    color: #abb2bf;
+    padding: 0 20px;
+    font-weight: 600;
+    line-height: 1.3em;
 }
 
-main .list .item img{
-    -webkit-filter: invert(80%);
+main .list .item .icon {
     max-width: 130px;
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
+    color: #00d770;
+    font-size: 130px;
 }
 
-@media (max-width: 600px) {
+section.features {
+    background: #191c21;
+    color: #babcc2;
+    font-size: 20px;
+    padding: 100px 0px;
+}
 
-    header nav{
+section.available{
+    padding: 40px;
+}
+
+section.available h2{
+    margin: 0;
+    color: #ccc;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer {
+    background: #16171d;
+    padding: 40px;
+    color: white;
+    color: #abb2bf;
+    font-weight: 600;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .ion-heart {
+    color: #ef3f3a;
+}
+
+@media (max-width: 960px) {
+    header nav {
         padding: 10px 20px;
     }
-
-    header .banner{
+    header .banner {
         flex-direction: column;
     }
-
+    header .banner small {
+        font-size: 5vw;
+    }
+    header .banner h2 {
+        font-size: 10vw;
+    }
     header .banner .button {
         display: none;
     }
-
     header .banner .left {
         width: 100%;
         height: auto;
         padding: 40px 20px;
     }
-
     header .banner .left .info h1 {
         font-size: 40px;
     }
-
     header .banner .right {
         width: 100%;
         height: 240px;
     }
-
-    header .banner .right{
+    header .banner .right {
         background-size: 100% auto;
+    }
+
+    section.features{
+        padding: 40px 0;
+    }
+    section.features .list {
+        flex-wrap: wrap;
+    }
+    section.features .list .item {
+        width: 50%;
+        margin-bottom: 80px;
+    }
+    section.features .list .item .icon{
+        font-size: 80px;
     }
 }
