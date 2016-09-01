@@ -24,6 +24,7 @@ header nav {
     display: flex;
     padding: 20px 40px;
     align-items: center;
+    border-bottom: #eee solid 2px;
 }
 
 header nav .links{
@@ -264,5 +265,9 @@ footer .ion-heart {
     }
     section.features .list .item .icon {
         font-size: 80px;
+    }
+
+    footer{
+        padding: 40px 20px;
     }
 }
