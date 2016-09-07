@@ -168,7 +168,7 @@ main .list .item {
     flex-direction: column;
     width: 25%;
     text-align: center;
-    color: #696f7a;
+    color: ;white
     padding: 0 20px;
     font-weight: 600;
     line-height: 1.3em;
@@ -185,13 +185,13 @@ main .list .item .icon {
 
 section.features {
     background: #191c21;
-    color: #babcc2;
+    color: white;
     font-size: 20px;
     padding: 100px 0px;
 }
 
 section.features h2{
-    color: #9da5b4;
+    color: white;
 }
 
 section.available {
